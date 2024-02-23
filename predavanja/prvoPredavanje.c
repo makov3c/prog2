@@ -13,11 +13,16 @@
 
 int f(int n) {
     printf("[%d] \n",n);
+    // printf("x");
     return n;
 }
 
 int main() {
-    printf("[%d %d]\n", f(5), f(11));
+    int first = f(5);
+    int second = f(11);
+    printf("[%d %d]\n", first, second);
+    // v c-ju ni določeno, kateri argument se prvi izračuna - ni nujno od leve proti desni
+    // torej vrstni red ni
     return 0;
 }
 
