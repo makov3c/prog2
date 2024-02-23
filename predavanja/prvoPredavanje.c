@@ -11,13 +11,16 @@
 
 #include <stdio.h>
 
+int f(int n) {
+    printf("[%d] \n",n);
+    return n;
+}
 
 int main() {
-    printf("Hello world! \n");
-    printf("test1");
-    
+    printf("[%d %d]\n", f(5), f(11));
+    return 0;
 }
 
 // c ni OOP zato nimamo classov, objektov
-// ./prvoPredavanje.c
-// ukaz v terminalu požene tisti program, ki smo ga nazadnje pognali, in ne tistega, ki ga imamo trenutno shranjennega
+// prevedena koda se razlikuje od procesorja do procesorja! med seboj ne deluje!
+// pri javi npr. je to ista stvar (torej .class datoteka je enaka)
